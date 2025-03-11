@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    background: #f4f4f4;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#successMessage {
+    display: flex;  /* Исправлено */
+    align-items: center;
+    background: lightgreen;
+    padding: 5px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#successImage {
+    width: 50px !important;  /* Исправлено */
+    height: 50px !important; /* Исправлено */
+    margin-right: 10px;
+}

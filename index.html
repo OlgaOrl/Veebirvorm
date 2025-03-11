@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veebivorm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+<h2>Veebivorm</h2>
+<form id="myForm">
+    <label>Nimi: <input type="text" id="name"></label><br>
+    <label>Email: <input type="email" id="email"></label><br>
+    <label>Vanus: <input type="number" id="age"></label><br>
+    <button type="submit">Saada</button>
+</form>
+
+<div id="successMessage" style="display: none;">
+    <p>Vorm on edukalt saadetud!</p>
+    <img id="successImage" src="images/success.jpg" alt="Success">
+</div>
+</body>
+</html>

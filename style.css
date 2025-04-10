@@ -33,7 +33,7 @@ button {
 }
 
 #successImage {
-    width: 50px !important;  /* Исправлено */
-    height: 50px !important; /* Исправлено */
+    width: 150px !important;  /* Исправлено */
+    height: 100px !important; /* Исправлено */
     margin-right: 10px;
 }

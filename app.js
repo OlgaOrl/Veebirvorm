@@ -1,6 +1,16 @@
 $(document).ready(function() {
     console.log("jQuery is working!");
 
+    // Попытка прочитать данные из localStorage
+    let savedName = localStorage.getItem("name");
+    let savedEmail = localStorage.getItem("email");
+    let savedAge = localStorage.getItem("age");
+
+    // Если есть сохраненные данные, можно предзаполнить форму
+    if (savedName) $("#name").val(savedName);
+    if (savedEmail) $("#email").val(savedEmail);
+    if (savedAge) $("#age").val(savedAge);
+
     $("#myForm").submit(function(event) {
         event.preventDefault();
 
@@ -25,8 +35,16 @@ $(document).ready(function() {
 
         console.log("Andmed salvestatud:", { name, email, age });
 
-        // Показываем div и меняем картинку
+        // Показываем div и меняем картинку на случайную
         $("#successMessage").fadeIn();
-        $("#successImage").attr("src", "images/success.jpg");
+
+        // Изменяем src на разные картинки
+        let randomImages = [
+            "images/success.jpg",
+            "images/success2.jpg",
+            "images/success3.jpg"
+        ];
+        let randomImageSrc = randomImages[Math.floor(Math.random() * randomImages.length)];
+        $("#successImage").attr("src", randomImageSrc);
     });
 });
